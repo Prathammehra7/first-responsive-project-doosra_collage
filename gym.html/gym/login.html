@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .container {
+            color: white;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            width: 100%;
+        }
+
+        .buttlogin {
+            width: 250px;
+            background-color: #04AA6D;
+            color: white;
+            display: initial;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+
+        input,
+        .btn {
+            padding: 10px 40px;
+            margin: 10px 0;
+            opacity: 0.85;
+            font-size: 17px;
+
+        }
+
+        .new {
+            color: white;
+            margin: 90px 200px;
+            border-radius: 17px;
+            border: 2px solid blue;
+            padding: 35px;
+            width: 580px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 1100px) {
+
+            .new {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                width: 0%;
+                height: 500px;
+                padding: 13px 20px;
+                border: none;
+
+            }
+
+            .top {
+                display: flex;
+                justify-content: center;
+
+                width: 0px;
+            }
+
+
+            .contaniers {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+            }
+
+            .login {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="new">
+
+
+        <div class="top">
+            <b style="font-size:  35px">
+                HEALTH|FITNESS| <br>
+                LIFESTYLE
+                <br>
+                GYM
+            </b>
+        </div>
+
+        <div class="login">
+            <div class="container">
+
+                <form action="">
+                    <div class="name">
+                        <label class="label" for="fname">First Name</label>
+                        <br>
+                        <input type="text" name="fname" id="fname" required="" class="box">
+                    </div>
+
+                    <div class="last">
+                        <label class="label" for="lname">Last Name</label>
+                        <br>
+                        <input type="text" name="lname" id="lname" required="" class="box">
+                    </div>
+                    <div class="email">
+                        <label class="label" for="email">Email</label>
+                        <br>
+                        <input type="text" name="email" id="email" required="" class="box">
+                    </div>
+                    <div class="pswd">
+                        <label class="label" for="password">Password</label><br>
+                        <input type="password" name="password" id="password" required="" class="box">
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox" name="remeber" id="remeber"> <label for="remeber" class="checkboxes">
+                            I accept the Terms & Conditions </label><br>
+                    </div>
+                    <input type="submit" class="buttlogin" value="SIGN UP">
+
+
+                    <!-- <section class="bottom" id="contact">
+                        <h2 class="text-center">
+                            Contact us..
+                        </h2>
+                        <div class="form">
+                        <input class="form-input" type="text" name="name" id="name" required="" placeholder="Name">
+                        <input class="form-input" type="text" name="contact" id="contact" required="" placeholder="Contact">
+                        <input class="form-input" type="email" name="email" id="email" required="" placeholder="Email">
+                        <textarea class="form-input" name="text" id="text" cols="30" rows="10" required="" placeholder="Enter.."></textarea>
+                        <button class="btn btn-dark"> Submit</button>
+                        </div>
+                    </section> -->
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

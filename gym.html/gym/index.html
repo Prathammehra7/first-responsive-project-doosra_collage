@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @import url(https://wallpapercave.com/wp/wp5901457.jpg);
+
+        .logo {
+            display: flex;
+            width: 20%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 40%;
+            border-radius: 50px;
+            border: 2px solid black;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: black;
+
+
+        }
+
+        .navlist {
+            display: flex;
+            align-content: center;
+        }
+
+        .navlist li {
+            list-style: none;
+            padding: 14px 30px;
+
+        }
+
+        .navlist li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .navlist li a:hover {
+            color: grey;
+
+        }
+
+        .login1 {
+            display: flex;
+            justify-content: right;
+            width: 380%;
+            padding: 12px;
+        }
+
+        .loginright {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            font-weight: 600;
+            border-radius: 10px;
+            width: 200px;
+            padding: 8px 0;
+            transition: 0.4s;
+        }
+
+        button:hover {
+            color: white;
+            cursor: pointer;
+            background-color: rgb(236, 9, 9);
+        }
+
+        .background {
+            background: url(https://wallpapercave.com/wp/wp5901457.jpg);
+            background-size: cover;
+            background-blend-mode: darken;
+
+        }
+
+        .firstmain {
+            height: 550px;
+
+        }
+
+        .box-main {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+            margin: auto;
+        }
+
+        .first {
+            display: flex;
+            color: white;
+            width: 100%;
+            font-size: 50px;
+            justify-content: center;
+            margin: 61px -130px;
+            animation-name: slidein;
+            animation-duration: 1.5s;
+        }
+
+
+        @keyframes slidein {
+            from {
+                margin-right: 100%;
+                width: 10%;
+            }
+        }
+
+        .text-big {
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box1 {
+            padding: 55px;
+        }
+
+
+
+        .firstimg img {
+            border: 1px solid black;
+            border-radius: 40px;
+            height: auto;
+            width: 400px;
+        }
+
+        .bolt {
+            font-size: 30px;
+        }
+
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            max-width: 1060px;
+            margin: auto;
+            padding: 50px 44px;
+        }
+
+        .section-left {
+            flex-direction: row-reverse;
+        }
+
+        .secondimg img {
+            border: 1px solid black;
+            border-radius: 40px;
+            height: auto;
+            width: 400px;
+        }
+
+        .box2 {
+            padding: 55px;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1519px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -300px;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 8px;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev {
+            left: 8px;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+
+
+
+
+        .new11 {
+            text-align: center;
+            font-size: 250%;
+            padding: 50px;
+
+        }
+
+        .new12 {
+            text-decoration: underline;
+            font-style: italic;
+            color: blue;
+        }
+
+        .form {
+            max-width: 450px;
+            margin: auto;
+        }
+
+        .form input {
+            width: 100%;
+            margin: 20px 0px;
+            padding: 6px 14px;
+            font-size: 19px;
+            border: 2px solid gray;
+            border-radius: 12px;
+        }
+
+        .text-center {
+            text-align: center;
+            padding: 22px;
+            font-size: 40px;
+            color: white;
+        }
+
+        .btn-dark {
+            display: flex;
+            justify-content: center;
+            padding: 13px;
+            margin: 8px 0px;
+        }
+
+        .bottom {
+            background-color: rgb(36, 33, 36);
+        }
+
+        .burger {
+
+            display: none;
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 15px;
+        }
+
+        .line {
+            width: 33px;
+            background-color: white;
+            height: 4px;
+            margin: 5px 3px;
+        }
+
+        @media only screen and (max-width: 1100px) {
+            .navlist {
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+
+            }
+
+            .navbar {
+                flex-direction: column;
+                transition: all 0.9s ease-out;
+                height: 270px;
+            }
+
+            .logo {
+
+                display: flex;
+                justify-content: center;
+                width: 12%;
+
+
+
+            }
+
+            .loginright {
+                flex-direction: column;
+                display: flex;
+                text-align: center;
+            }
+
+            .navlist {
+                width: 100%;
+                display: flex;
+                align-content: center;
+                align-items: center;
+
+
+            }
+
+
+            .login1 {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 12px;
+            }
+
+            .burger {
+                display: block;
+            }
+
+            .h-nav-resp {
+                height: 102px;
+
+            }
+
+            .v-class-resp {
+                opacity: 0;
+            }
+
+            .box-main {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .background {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-content: center;
+                align-items: center;
+                width: auto;
+                background-repeat: no-repeat;
+                background-position-x: center;
+            }
+
+            .text-big {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                font-size: 33px;
+            }
+
+            .box1 {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                margin: -64px 21px;
+            }
+
+            .firstimg {
+                display: flex;
+                justify-content: center;
+                flex-direction: column-reverse;
+
+                margin: 50px;
+            }
+
+            .section {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                max-width: 1060px;
+                margin: auto;
+                flex-direction: column;
+            }
+
+            .firstimg img {
+                border: 1px solid black;
+                border-radius: 40px;
+                height: auto;
+                width: 240px;
+
+            }
+
+            .secondimg img {
+                border: 1px solid black;
+                border-radius: 40px;
+                width: 240px;
+                margin: -45px;
+            }
+
+            .new11 {
+                text-align: center;
+                font-size: 120%;
+                padding: 50px;
+            }
+
+            .box2 {
+                padding: 38px 73px;
+            }
+
+            .new11 {
+                max-width: 1519px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .slide {
+
+
+
+                height: auto;
+                width: 390px;
+
+            }
+
+            .bottom {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .form {
+
+                background-color: rgb(36, 33, 36);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+
+            }
+
+            .form-input {
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                align-items: center;
+                width: 100%;
+            }
+
+            .loginright p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class=" navbar h-nav-resp">
+        <ul class="navlist v-class-resp">
+            <div class="logo"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkApV3ASG-ZgjiKDlM-gr9b8oADLdJ0qPcCHEwVSIGETTmRKUMWKjZzEYwx1uMj43v-_o&usqp=CAU"
+                    alt=""></div>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contactus">CONTACT US</a></li>
+        </ul>
+
+        <a href="login.html" target=_main>
+            <div class="login1 v-class-resp">
+                <button class="loginright">
+                    <p>Login </p>
+                </button>
+            </div>
+        </a>
+
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+
+        </div>
+    </nav>
+
+
+    <section class="background firstmain">
+        <div class="box-main">
+            <div class="first">
+                <p class="text-big"><b>
+                        HEALTH|FITNESS| <br>
+                        LIFESTYLE
+                        <br>
+                        GYM
+                    </b></p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="main1" style="background-color: rgb(255, 222, 252);height: 390px">
+        <section class="section">
+            <div class="box1">
+                <div class="firstpara">
+                    <b class="bolt">
+                        This is my Website_Personal
+                    </b>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nulla tempore animi dolorum
+                        voluptate ex perspiciatis recusandae porro quia commodi illum aliquid similique maiores,
+                        repellat voluptatum doloribus! Minus, beatae natus qui quae quod debitis quidem sint quo unde
+                        nemo perferendis?
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <div class="firstimg">
+                <img src="https://images.unsplash.com/photo-1623874400767-0fcdeedd0f5d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGd5bSUyMGxvZ298ZW58MHx8MHx8&auto=format&fit=crop&w=600"
+                    alt="">
+
+            </div>
+        </section>
+    </div>
+
+
+    <div class="main2" style="background-color: rgb(255, 222, 252);">
+        <section class="section section-left">
+            <div class="box2">
+                <div class="firstpara1" style="padding: 51px;">
+                    <b class="bolt">
+                        This is my Website_Personal
+                    </b>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nulla tempore animi dolorum
+                        voluptate ex perspiciatis recusandae porro quia commodi illum aliquid similique maiores,
+                        repellat voluptatum doloribus! Minus, beatae natus qui quae quod debitis quidem sint quo unde
+                        nemo perferendis?
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <div class="secondimg">
+                <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGd5bSUyMGxvZ298ZW58MHx8MHx8&auto=format&fit=crop&w=600"
+                    alt="">
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </section>
+    </div>
+    <div class="slideshow-container">
+        <div class="new11">
+            <h3>
+                We can give YOU <br>
+                <span class="new12"> Much more than others </span>
+            </h3>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="https://cdn.thespaces.com/wp-content/uploads/2020/01/Gymshark-hero-crop.jpg"
+                    style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="https://cdn.thespaces.com/wp-content/uploads/2020/01/oktra_gymshark_lifiting_club_5.jpg"
+                    style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="https://cdn.thespaces.com/wp-content/uploads/2020/01/Fernanda_Orozco_Refuse_Cycling-11.jpg"
+                    style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+
+
+
+            burger = document.querySelector('.burger')
+            navbar = document.querySelector('.navbar')
+            navlist = document.querySelector('.navlist')
+            login1 = document.querySelector('.login1')
+
+
+            burger.addEventListener('click', () => {
+                navlist.classList.toggle('v-class-resp')
+                login1.classList.toggle('v-class-resp')
+                navbar.classList.toggle('h-nav-resp')
+            })
+        </script>
+
+
+        <section class="bottom">
+            <h2 class="text-center">
+                Contact us..
+            </h2>
+            <div class="form">
+                <input class="form-input" type="text" name="name" id="name" required="" placeholder="Name">
+                <input class="form-input" type="text" name="contact" id="contact" required="" placeholder="Contact">
+                <input class="form-input" type="email" name="email" id="email" required="" placeholder="Email">
+                <textarea class="form-input" name="text" id="text" cols="30" rows="10" required=""
+                    placeholder="Enter.."></textarea>
+                <button class="btn btn-dark"> Submit</button>
+            </div>
+        </section>
+
+        <script src="js/resp.js"></script>
+</body>
+
+</html>
+
+
+<a href="login.html" target=_main>
